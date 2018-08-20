@@ -1,0 +1,205 @@
+body {
+  font-family: Lato, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #f1f1f1;
+}
+.container{
+  box-sizing: border-box;
+
+}
+header {
+  background-color: #232323;
+  border-bottom: 7px solid #d8d8d8;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%
+
+}
+
+.logo {
+  margin-left: 50px;
+  display: inline-block;
+  background: url("/assets/images/kahoot-logo.svg") no-repeat center center;
+  background-size: contain;
+  width: 125px;
+  height: 68px;
+}
+
+.link {
+  color: #fff;
+  font-weight: 200;
+  font-size: 17px;
+  text-decoration: none;
+}
+
+.button1 {
+  color: #fff;
+  font-size: 15px;
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, .5);
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 800;
+  text-align: left;
+  margin-right: 50px;
+}
+
+.signup {
+  padding: .7em 1em;
+  background: #8a5cd7;
+  margin-left: 10px;
+}
+
+.signup:hover {
+  background: #f78e56;
+}
+
+.signup:active {
+  background: #b96941;
+}
+
+#header-triangle {
+  display: inline-block;
+  background: url("/assets/images/divider-navbar.png") no-repeat center center;
+  background-size: contain;
+  width: 100%;
+  height: 45px;
+  transform: translateY(-7px);
+  position: fixed;
+  top: 75px;
+}
+
+.form {
+  width: 368px;
+  height: 511px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 120px auto 50px;
+  font-family: Montserrat, Helvetica Neue, helvetica, arial, sans-serif;
+  font-weight: 100;
+  padding: 10px;
+}
+
+.button {
+  width: 100%;
+  height: 48px;
+  border-style: none;
+  border-radius: 5px;
+  margin: 10px 0;
+  color: #ffffff;
+  text-align: left;
+  padding-left: 70px;
+  outline: none;
+}
+
+h2 {
+  font-size: 49px;
+  line-height: 50px;
+  color: #41c4dd;
+  font-weight: 800;
+  font-family: Open sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+  margin-top: 0px;
+}
+
+.btn-google {
+  background: url(/assets/images/Microsoft.png) no-repeat 5px  3px ;
+  background-color: #4285f4;
+  border-bottom: #407DEA 3px solid;
+  border-right: #407DEA 2px solid;
+}
+.btn-google:hover{
+  background-color: #438fff;
+}
+.btn-google:active {
+  background-color: #407DEA;
+}
+
+.btn-microsoft {
+  background: url(/assets/images/Google.png) no-repeat 5px  3px;
+  background-color: #003f87;
+  border-bottom: #003469 3px solid;
+  border-right: #003469 2px solid;
+}
+.btn-microsoft:hover{
+  background-color: #004a9f;
+}
+.btn-microsoft:active {
+  background-color: #003469
+}
+
+.between {
+  display: flex;
+  flex-direction: row;
+  margin-top: 15px;
+}
+
+table {
+  width: 175px;
+  border-bottom: solid #ccd1d3 1px;
+  margin-top: 10px;
+}
+
+.or {
+  margin-left: 7px;
+  margin-right: 7px;
+  color: #888d8f;
+}
+.enter {
+  border-radius: 0px;
+  color: #41c4dd;
+  border-top: #ccd1d3 2px solid;
+  border-left: #ccd1d3 2px solid;
+  padding: 15px 10px 15px 30px;
+  outline: none;
+}
+
+.name {
+  background: url(/assets/images/users_bf.png) no-repeat 5px center;
+}
+.name::placeholder{
+  color:#ccd1d3 ;
+}
+.name:focus {
+  background: url(/assets/images/users_at.png) no-repeat 5px center;
+}
+
+.name:focus::placeholder {
+  color: #41c4dd;
+}
+
+.password {
+  background: url(/assets/images/lock_bf.png) no-repeat 5px center;
+}
+.password::placeholder{
+   color:#ccd1d3 ;
+}
+.password:focus{
+  background: url(/assets/images/lock_af.png) no-repeat 5px center;
+}
+.password:focus::placeholder{
+  color: #41c4dd;
+}
+.login {
+  background-color: #8a5cd7;
+  border-bottom: #7B56C4 4px solid;
+  border-right: #7B56C4 4px solid;
+  height: 40px;
+  font-size: 23px;
+  color: #ffffff;
+  outline: none;
+  padding-left: 141px;
+}
+
+.login:hover {
+  background: #7B56C4;
+}
+.login:active{
+  background-color: #6d53b2;
+}
+

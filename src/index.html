@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kahoot!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="/assets/images/favicon-32x32.png" sizes="32x32"/>
+  <link rel="stylesheet" href="/assets/normalize.css">
+  <link rel="stylesheet" href="/assets/style.css">
+  <link rel="stylesheet" href="/assets/responsive.css">
+  <script>
+    let version;
+    const loop = () => {
+      fetch('/version', {method: 'POST'})
+        .then(res => res.json())
+        .then((ver) => {
+          if(!version){
+            version = ver;
+          } else if(version !== ver) {
+            window.location.reload();
+            return;
+          }
+          setTimeout(loop, 100);
+        })
+    };
+    loop();
+  </script>
+</head>
+<body class="container">
+<header>
+  <a class="logo" href="/index.html">
+  </a>
+  <div>
+    <a class="link" href="#"><i>Not got an account?</i></a>
+    <a class="button1 signup" href="#">Sign up</a>
+  </div>
+</header>
+<div id="header-triangle"></div>
+<div class="form">
+  <h2 class="name-form" style="color: #41c4dd">LOG IN</h2>
+  <button type="button" class="button btn-google">Log in with Google</button>
+  <button type="button" class="button btn-microsoft">Log in with Microsoft</button>
+  <div class="between part">
+    <table class="grid-span"></table>
+    <div class="or">or</div>
+    <table class="grid-span"></table>
+  </div>
+  <input class="enter name" placeholder="User name or email" type="text" style="background-color:white">
+  <input class="enter password" placeholder="Password" type="password" style="background-color:white">
+  <button class="button login" type="submit">Log in</button>
+  <a href="#"><i style="color: black">Lost your password?</i></a>
+  <div>If you are sturck, pleas <a href="#" style="color: black">let us know.</a></div>
+</div>
+</body>
+</html>
